@@ -11,6 +11,7 @@ then
     echo "Commands:                               Info:"
     echo "./2_pull_data.sh --h		        Help Menu"
     echo "./2_pull_data.sh --releases	Pulls data for future film releases"
+    echo "./2_pull_data.sh --actors   Pulls data on actors films (num/box office)"
     echo ""
     echo "Current Directory is: "
     pwd
@@ -22,4 +23,9 @@ fi
 if [ $1 = "--releases" ]
 then
 Rscript /Users/jje/Documents/00__mytools/3_mojo/1_src/2_r/1_future_release_dates.R
+fi
+
+if [ $1 = "--actors" ]
+then
+Rscript /Users/jje/Documents/00__mytools/3_mojo/1_src/2_r/2_actors.R
 fi
