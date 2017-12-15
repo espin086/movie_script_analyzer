@@ -10,12 +10,7 @@ then
     echo ""
     echo "Commands:                               Info:"
     echo "./2_pull_data.sh --h		        Help Menu"
-    echo "./2_pull_data.sh --topmovies [month]	Pulls box office revenue per month[month]"
-    echo "./2_pull_data.sh --mojofilm           Pulls film metadata from box office mojo"
-    echo "./2_pull_data.sh --mojoactor          Pulls actor metadata from box office mojo"
-    echo "./2_pull_data.sh --stocks             Pulls stock market data for entertainment companies"
-    echo "./2_pull_data.sh --feds               Pulls economic data from US Federal Reserve Bank"
-    echo "./2_pull_data.sh --linkedin [jobtitle] Pulls job data from Linkedin API"
+    echo "./2_pull_data.sh --releases	Pulls data for future film releases"
     echo ""
     echo "Current Directory is: "
     pwd
@@ -24,3 +19,7 @@ then
 
 fi
 
+if [ $1 = "--releases" ]
+then
+Rscript /Users/jje/Documents/00__mytools/3_mojo/1_src/2_r/1_future_release_dates.R
+fi
