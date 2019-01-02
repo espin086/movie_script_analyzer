@@ -1,4 +1,4 @@
-# 3_mojo
+# Movie Script Analyzer
 
 
 ## To Dos:
